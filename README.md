@@ -6,5 +6,5 @@ python语言，用了numpy库进行卦象的记录，tkinter库完成图形界�
 # 使用方法：
 运行main.py即可打开软件
 打开软件后默念所问之事，点击排挂程序就能生成卦象，有需要解卦的同学可以联系我
-# 没有py环境的同学可以下载打包后的exe版
+没有py环境的同学可以下载打包后的exe版
 链接: https://pan.baidu.com/s/1PKkBQ3Km-g2dmW0Nl0Mbdg 提取码: hqia
