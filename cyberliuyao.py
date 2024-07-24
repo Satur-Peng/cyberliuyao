@@ -176,9 +176,9 @@ class LiuYao:
         head = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}
         r = requests.get(url=url, headers=head)
-        self.richen = r.json()["data"]['TianGanDiZhiDay'][0]
-        self.yuejian = r.json()["data"]['TianGanDiZhiMonth'][0]
-        First = warehouse.QingLS[self.richen]
+        self.richen = r.json()["data"]['TianGanDiZhiDay'][1]
+        self.yuejian = r.json()["data"]['TianGanDiZhiMonth'][1]
+        First = warehouse.QingLS[r.json()["data"]['TianGanDiZhiDay'][0]]
         Number = warehouse.LiuShen.index(First)
         LiuShen = []
         for i in range(Number, Number + 6):
@@ -196,6 +196,7 @@ class LiuYao:
 # g = My.getLiuQin(d[0], e)
 # h = My.getQueLiuQin(b)
 # i = My.getLiuShen()
+# print(My.yuejian)
 # print(My.yuejian, My.richen)
 # print("投掷结果是", a)
 # print("本卦是", b)
